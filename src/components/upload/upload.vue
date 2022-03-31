@@ -154,7 +154,14 @@ const onClearAll = () => {
     title="上传结果"
   >
     <el-image
-      v-if="dialogImageUrl.length > 0"
+      v-if="
+        dialogImageUrl &&
+        dialogImageUrl.length > 0 &&
+        (fileType === 'png' ||
+          fileType === 'jpg' ||
+          fileType === 'jpeg' ||
+          fileType === 'gif')
+      "
       :src="dialogImageUrl"
       :preview-src-list="[dialogImageUrl]"
     >
