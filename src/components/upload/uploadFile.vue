@@ -17,7 +17,7 @@ const handleClick = (tab: TabsPaneContext, event: Event) => {
     v-model="activeName"
     class="demo-tabs"
     @tab-click="handleClick"
-    style="height: calc(100vh - 20px)"
+    style="height: calc(100vh - 70px)"
   >
     <el-tab-pane label="上传图片" name="uploadfile">
       <Upload></Upload>
@@ -28,4 +28,4 @@ const handleClick = (tab: TabsPaneContext, event: Event) => {
   </el-tabs>
 </template>
 
-<style scoped></style>
+<style lang="scss" scoped></style>

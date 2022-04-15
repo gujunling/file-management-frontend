@@ -10,6 +10,7 @@ import viteCompression from 'vite-plugin-compression'
 // }
 
 export default defineConfig({
+  base: '/up',
   resolve: {
     // alias: [
     //   {

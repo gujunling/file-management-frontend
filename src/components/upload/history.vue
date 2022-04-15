@@ -6,6 +6,17 @@ const msg = ref('hello History')
 
 <template>
   <h1>{{ msg }}</h1>
+
+  <iframe
+    src="https://sweetheartjq.cn"
+    width="100%"
+    height="800px"
+    class="test"
+  ></iframe>
 </template>
 
-<style scoped></style>
+<style lang="scss" scoped>
+.test {
+  border: 1px solid;
+}
+</style>

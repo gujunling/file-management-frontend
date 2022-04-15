@@ -128,6 +128,7 @@ const onClearAll = () => {
 </script>
 
 <template>
+    <!-- action="https://sweetheartjq.cn/upload/fileUpload" -->
   <el-upload
     ref="uploadRef"
     action="upload/fileUpload"
