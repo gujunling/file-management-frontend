@@ -10,7 +10,7 @@ import viteCompression from 'vite-plugin-compression'
 // }
 
 export default defineConfig({
-  base: '/up',
+  base: './',
   resolve: {
     // alias: [
     //   {
@@ -37,10 +37,12 @@ export default defineConfig({
     host: '0.0.0.0',
     //  open: true // 自动打开浏览器
     port: 3100,
+
     proxy: {
       '/upload': {
         target: 'http://sweetheartjq.cn:8989',
         changeOrigin: true
+        // rewrite: path => path.replace(/^\/upload/, '')
       }
     }
   },
